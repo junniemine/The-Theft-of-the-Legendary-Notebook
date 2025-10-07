@@ -7,20 +7,72 @@
     <link rel="stylesheet" href="/src/style.css">
     <title>Title</title>
 </head>
+<style>
+@import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2');
+    body{font-family: 'ChosunCentennial',sans-serif;
+        color: #1c1c1c;
+        padding: 0 1rem;
+       
+      }
+       
+        .map_image{display: block;
+        width:330px;
+    height: auto;}
 
+
+    .map_container{
+        position: relative;
+        display: inline-block;
+       max-width:100px;
+    }
+
+    .map-link{
+        position: absolute;
+       
+    }
+    .map_image{
+        display: block;
+        
+    }
+        #link-poster {
+            top: 35%; left:3%;
+            width: 80%; height: 5%;
+        }
+        #link-motto {
+            top: 76%; left: 30%;
+            width: 52%; height: 5%;
+        }
+        #link-safe {
+            top: 4%; left: 192%;
+            width: 45%; height: 5%;
+        }
+        #link-rules {
+            top: 18%; left: 145%;
+            width: 48%; height: 5%;
+        }
+        #link-admin {
+            top: 68%; left: 158%;
+            width: 53%; height: 5%;
+        }
+        </style>
 <body>
-동아리 내부에 들어서자 온갖 잡동사니들이 눈에 띈다. 나를 이곳으로 끌고 올때까지 자신만만하던 송지우의 얼굴에 어딘가 모르게 초조한 빛이 맴돌고 있다.
-수상해보이는 곳을 탐색해 증거를 찾자. 
-<h4><a href="동아리금고">동아리 금고</a></h4>
-<h4><a href="전설의 노트 관리자 일지">전설의 노트 관리자 일지</a></h4>
-<h4><a href="동아리 급훈">동아리 급훈</a></h4>
-<h4><a href="차기 부회장 신청 명단">차기 부회장 선출 기간을 알리는 포스터</a></h4>
-<h4><a href="전설의 노트 작성 규정">전설의 노트 작성 규정</a></h4>
+ <div class="map_container">
+        <img src="map_image.jpg" class="map_image" alt="동아리실 도면도">
+        <a id="link-poster" class="map-link" href="차기 부회장 신청 명단.html" title="부회장선거포스터"></a>
+        <a id="link-motto" class="map-link" href="동아리 급훈.html" title="동아리급훈"></a>
+        <a id="link-safe" class="map-link" href="동아리금고.html" title="금고"></a>
+        
+        <a id="link-admin" class="map-link" href="전설의 노트 관리자 일지.html" title="관리자명단"></a>
+        </div>
+<p>동아리 내부에 들어서자 온갖 잡동사니들이 눈에 띈다. 나를 이곳으로 끌고 웃음이 가득했던 송지우의 <b>얼굴에 어딘가 모르게 초조한 빛</b>이 맴돌고 있다.
+수상해보이는 곳을 탐색해 증거를 찾자.
+</p>
 
-<h3>[용의자 심문]</h3>
-<p><a href="용의자오답">1.정민기</a></p>
-<p><a href="용의자정답">2.이시헌</a></p>
-<p><a href="용의자오답">3.이다은</a></p>
+<p>충분한 단서를 얻은 것 같다면 <b>용의자를 심문</b>하자</p>
+  <p><a href = "용의자지목.html" class = "세모">용의자 심문하기 ▼</a></p>
+
+
+
 
     <script type="module" src="/src/main.js"></script>
 </body>

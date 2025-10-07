@@ -8,25 +8,69 @@
     <title>Title</title>
 </head>
 
+<style>
+        @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2');
+        body{
+            font-family: 'ChosunCentennial',sans-serif;
+            color: #1c1c1c;
+            padding: 1rem;
+            line-height: 1.5;
+            }
+        table{
+            width: 250px;
+            height: 100px;
+            text-align: center;
+            font-family: Galmuri14;
+        }
+        .용의자{
+            font-family: Galmuri14;
+        }
+        a{
+            font-family: Galmuri14;
+            font-size: 15px;
+            margin-left: 3px;
+        }
+        </style>
+
 <body>
-<p><i>전설의 노트 관리자 일지..? 이런 유치한 이름이 진짜라고? 당연히 송지우 혼자 부르는 이름인줄 알았는데...
+<h2>[관리자 명단]</h2>
+<p><i>전설의 노트 관리자 명단..? 이런 유치한 이름이 진짜라고? 당연히 송지우 혼자 부르는 이름인줄 알았는데...
 송지우 말대로 저번주 관리자는 자기 자신이였군</i></p>
 
-    <p>20XX년 8월 1주차
-        관리인: 이다은
-    </p>
-    <p>20XX년 8월 2주차
-        관리인: 송지우 
-    </p>
-    <P>20XX년 8월 3주차
-        관리인: 이시헌
-    </P>
-    <p>20XX년 8월 4주차
-        관리인: 정민기
-    </p>
-<p>모든 부원이 번갈아가면서 노트를 관리하도록 매주마다 새로운 관리인의 이름이 적혀있다. 매주 <b>월요일</b>을 기준으로 관리자가 변경되며, 한 달마다 새 비밀번호를 설정하여 같은 달 관리자 부원들에게 알리도록 일지 맨 하단에 작은 글씨로 적혀 있다.. </p>
+<table border="1" class = "table">
+    <thead>
+    <tr>
+        <th colspan="2" class="'table-title">
+            전설의 노트 관리자 명단 
+        </th>
+        </tr>
+        <th>관리주차</th>
+        <th>관리인</th>
+    
+    </thead>
+    <tbody>
+        <tr>
+        <td>20XX년 8월 1주차</td>
+    <td>이다은</td></tr>
+     <tr>  <td>20XX년 8월 2주차</td>    <td>송지우</td></tr>
+       <tr> <td>20XX년 8월 3주차</td>    <td>이시헌</td></tr>
+         <tr><td>20XX년 8월 4주차</td>    <td>정민기</td></tr>
+    </tbody>
+</table>
+<p>모든 부원이 번갈아가면서 노트를 관리하도록 매주마다 새로운 관리인의 이름이 적혀있다. 매주 <b>월요일</b>을 기준으로 관리자가 변경되며, 한 달마다 새 비밀번호를 설정하여 같은 달 관리자 부원들에게 알리는 것이 원칙이라고 일지 맨 하단에 작은 글씨로 적혀 있다. </p>
+<p class = "item">[관리자 명단]을 얻었다</p>
 
- <a href="room_search.html"> ▶동아리방으로 돌아가 탐색하기</a>
+
+<p>"여기 써있는 부원들이랑 이야기를 나눠보고 싶은데."</p>
+<p>"송지우: 나랑?"</p>
+<p>"어 너도 노트 관리자였잖아, 물어볼 것도 있고. 그리고 다른 관리자들과도 이야기를 나눠보고 싶어." </p>
+
+<h3>[동아리부원과 대화하기]</h3>
+<p><input type="button" value="송지우" onclick="location.href='용의자송지우.html'" class = "용의자">  <a>송지우와 대화하기</a></p>
+<p><input type="button" value="이다은" onclick="location.href='용의자이다은.html'" class = "용의자">  <a>이다은과 대화하기</p></a>
+
+
+<a href="room_search.html" class="세모"> 동아리방으로 돌아가 탐색하기▼</a>
     <script type="module" src="/src/main.js"></script>
 </body>
 

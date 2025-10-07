@@ -7,23 +7,106 @@
     <link rel="stylesheet" href="/src/style.css">
     <title>Title</title>
 </head>
-
+<style>
+        @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2');
+        body{
+            font-family: 'ChosunCentennial',sans-serif;
+            color: #1c1c1c;
+            padding: 1rem;
+            line-height: 1.5;
+            }
+             .sentence {
+            font-size: 1.0rem;
+            line-height: 2;
+            margin-bottom: 2rem;
+            font-family: 'Galmuri14';
+            text-align: center;
+        }
+        .blank {
+            display: inline-block;
+            width: 70px;
+            border-bottom: 2px solid #989898;
+            margin: 0 5px;
+        
+        }
+        .word-choices {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            border-top: 1px solid #ccc;
+            padding-top: 1.5rem;
+        }
+        .word-switch {
+            display: none;
+        }
+        .word-label {
+            padding: 5px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 1px solid black;
+            font-family: 'Galmuri14';
+            font-size: 13px;
+        }
+        .word-switch:checked + .word-label {
+            opacity: 0.5;
+            cursor: not-allowed;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+        }
+        .next-page-link {
+            display: none;
+            margin-top: 2rem;
+            text-align: center;
+        }
+        .next-page-link a {
+            font-size: 0.9rem;
+            color: #030303;
+            text-decoration: none;
+            font-family: 'Galmuri14';
+        }
+            #word-lock:checked ~ #word-conan:checked ~ #word-loud:checked ~ .next-page-link {
+            display: block;
+        }
+        
+</style>
+<body>
 <body> 
-    <h2>[모순 지적 시작] </h2>
-    <hr>
+    <h2>[이시헌의 반론] </h2>
 
-    <p>아 금고가 고장 난 거요? 맞아요. 하지만 저는 몰랐어요.</p>
-    <p>하지만  <a href="모순지적2_오답경고">금고 문이 닫혀있으니 비밀번호를 치고 문을 열었을 뿐</a>이에요.</p>
-    <p><a href="모순지적2_오답경고">회장님께서 문이 고장난 것은 언급하지 않으셨거든요.</a></p>
-    <p>제가 노트를 꺼내는 게 번거롭지 않게 <a href="모순지적2_오답경고">문을 잠그지 않고 가신줄 알았어요.</a></b></p>
-    <p>금고가 잠기는 소리는 선배 말대로 듣지 못했어요.하지만 서두른 이유는 선배가 말한 이유가 아니에요.</p>
-    <p>저는 그날 <a href="모순지적2_오답경고">6시에 다은이와 함께 하교할 예정</a>이었기 때문에 서둘러 나왔어요.</p>
-    <p>다은이한테 물어보면 알려줄거예요, 제가 얼마나 빨리 동아리방에서 나왔는지.
-    <p><a href="모순지적2_정답">5분도 채 걸리지 않고 나와 다은이와 하교</a>했어요.</p>
+<p>이시헌: 금고가 고장났다는 사실, 선배 말대로 정말 몰랐어요. 하지만 아침에 비밀번호를 친 이유는 금고 문이 닫혀 있으니까 친 거뿐이예요.
+    노트를 넣고 바로 나왔기 때문에 <b>문이 안 잠긴 줄</b> 몰랐어요.
+</p>
 
-     <p>"너의 말에는 모순이 있어 바로...</p>
+     <p>"그래? 근데 금고의 특성을 생각하면 잠긴줄 몰랐다는 건 말이 안 되는데..</p>
 
-        <h3>모순이 발생한 부분을 지적하자!</h3>
+        <p id = "ask">과거 송지우가 한 말을 회상해보자!(순서대로 클릭)</p>
+
+         <div class="puzzle-container">
+        <div class="sentence">
+            문을 <span class="blank"></span> 나면 <span class="blank"></span>를 아주 <span class="blank"></span> 들려주거든
+    
+        <input type="checkbox" id="word-lock" class="word-switch">
+        <input type="checkbox" id="word-conan" class="word-switch">
+        <input type="checkbox" id="word-loud" class="word-switch">
+        <input type="checkbox" id="word-quiet" class="word-switch">
+        <input type="checkbox" id="word-open" class="word-switch">
+    
+        <div class="word-choices">
+            <label for="word-quiet" class="word-label">작게</label>
+            <label for="word-conan" class="word-label">코난 ost</label>
+            <label for="word-loud" class="word-label">크게</label>
+            <label for="word-lock" class="word-label">잠그고</label>
+            <label for="word-open" class="word-label">열고</label>
+          
+        </div>
+
+    
+        <div class="next-page-link">
+            <a href="모순지적3.html">▼ 반박하기</a>
+        </div>
+    </div>
+
     
 
 

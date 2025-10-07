@@ -7,18 +7,97 @@
     <link rel="stylesheet" href="/src/style.css">
     <title>Title</title>
 </head>
+<style>
+@import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2');
+    body{font-family: 'ChosunCentennial',sans-serif;
+        color: #1c1c1c;
+        padding: 1rem;
+        line-height: 1.5;}
+        .submitbutton {
+            display: inline-block;
+            padding: 5px 7px ;
+            color: black;
+            
+            border-radius: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            border: 1px solid black;
+            font-family:'Galmuri14 Regular';
+            font-family: Galmuri14;
+            cursor: pointer;
+        }
+        .image_toggle {
+            display: none;
+            text-align: center;
+        }
+        .image_container {
+            display: none;
+            max-width:90%;
+            margin: 2rem auto;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .image_toggle:checked ~ .image_container {
+            display: block;
+        }
+        .image_toggle:checked ~ .submitbutton {
+            display: none;
+        }
+         .application-image {
+            max-width: 100%;
+            flex: 0 0 250px;
+            width: 250px; 
+            border: 3px solid white;
+            width: 250px;
+            border-radius: 8px;
+            scroll-snap-align: center;
+        }
+        .button_wrapper {
+            text-align: center;
+        }
+        .image-slider-wrapper {
+            display: flex; 
+            overflow-x: auto; 
+            
+            -webkit-overflow-scrolling: touch;
+            gap: 1rem; 
+        }
+        .image-slider-wrapper::-webkit-scrollbar {
+            display: none;
+        }
+        </style>
 
 <body>
-    <p>다음주에 부회장 선거가 있을 예정이다. 부회장 선거에 나갈 사람은 아래 신청 명단에 이름을 기록하라고 적혀있다. </p>
-    <p>신청자는 정민기, 이시헌, 이다은 세 명이다. 선거는 100% 부원들의 투표로 진행되며 투표 기간동안 전설의 노트를 <b>모든 부원이 자유롭게 볼 수 있다</b>고 명시되어 있다.</p>
-    <p>"전설의 노..아니 동아리 기록장이 선거에 꽤 중요한 영향을 미치는 모양이군"</p>
-    <p>송지우: "당연하지! 우린 아주 세세한 것까지 전설의 노트에 적는다고! 저번에 내가 적은 내용은 음..아! 백민서 동아리 시간에 만화책 보다가 걸림. 이였다! 아하하 민서가 빨리 그걸 봐야 하는데"</p>
-    <P><i>쓸모없는 내용이 가득한건가 저 공책은 저렇게 두꺼운 데는 이유가 다 있군</i></P>
+     <h2>[부회장 선거 포스터]</h2>
+    <p>포스터에 적힌 기간을 보면 다음주에 부회장 선거가 있을 예정이다. '정민기 기호 1번 저를 뽑아주신다면..'.포스터에는 선거는 100% 부원들의 투표로 진행되며 투표 기간동안 전설의 노트를 <b>모든 부원이 자유롭게 볼 수 있다</b>고 명시되어 있다.포스터 아래 [신청명단]이 놓여 있다</p>
+
+    <p class = "item">[부회장 선거 포스터]를 얻었다</p>
+    <input type="checkbox" id="application-viewer" class="image_toggle">
+    <div class="button_wrapper">
+     <label for="application-viewer" class="submitbutton">신청명단 보기</label></div>
+    <div class="image_container">
+        <h3>[신청 명단]</h3>
+        <div class="image-slider-wrapper">
+        <img src="이다은.jpg" alt="신청서 이미지" class="application-image"></label>
+        <img src="정민기.jpg" alt="신청서 이미지" class="application-image"></label>
+        <img src="이시헌.jpg" alt="신청서 이미지" class="application-image"></label>
+        </div>
+
+        <p><i><b>정민기,이다은,이시헌</b>...후보 중에 2학년은 이시헌 밖에 없는 건가. </i></p>
+            <p><i>이시헌...글씨체가 남자치고는 <b>몹시 정갈하군</b> 마치 타자기로 친 거 같아.</i></p>
+
+      
+        <label for="application-viewer" class="submitbutton">닫기</label>
+        </div>
+
+    <p>"전설의 노..아니 동아리 기록장이 선거에 꽤 중요한 영향을 미치는 모양이군."</p>
+    <p>송지우: "당연하지! 우린 아주 세세한 것까지 전설의 노트에 적는다고! 저번에 내가 적은 내용은 음..아! 백민서 동아리 시간에 만화책 보다가 걸림. 이였다! 아하하 민서가 빨리 그걸 봐야 하는데."</p>
+    <P><i>쓸모없는 내용이 가득한건가 저 공책은.. 저렇게 두꺼운 데는 이유가 다 있군.</i></P>
     <p>송지우: "그리고 저번달에 적은거는.. <b>이시헌 동아리 회비 십만원 훔쳐감.</b> 동아리 문도 안 잠그고 서둘러 나감. 
         시헌이가 이 기록을 보더니 나한테 얼마나 화를 내던지..하지만 전설의 노트에 <b>한 번 적힌 내용은 절대로 바꿀 수 없는걸?</b> 나한테 뭐라해봤자 소용없다고~"</p>
-    <p><i>..꽤나 중요한 노트이군</i></p>
+    <p><i>..꽤나 중요한 노트이군.</i></p>
 
-     <a href="room_search.html"> ▶동아리방으로 돌아가 탐색하기</a>
+     <a href="room_search.html" class="세모"> 동아리방으로 돌아가 탐색하기▼</a>
     <script type="module" src="/src/main.js"></script>
 </body>
 

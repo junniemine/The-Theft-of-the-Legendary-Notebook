@@ -1,5 +1,90 @@
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 1rem;
+.button{
+  background-color: #9b9b9b; 
+    color: white; 
+    border-radius: 3px; 
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 8px 11px;
 }
+
+.button:active {
+    background-color: #3e8e41; 
+    transform: translateY(2px); 
+}
+
+.date {
+  font-family: 'Galmuri14 Regular';
+  text-align: center; 
+}
+
+.처음대사 {
+  font-family: 'Galmuri14 Regular';
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  text-align: center;
+
+}
+.세모{
+  font-family: 'Galmuri14 Regular';
+  text-decoration: none;
+  font-size: 14px;
+  color: #333333;
+  text-align: center;
+}
+.말다음세모{
+  display: inline-block
+}
+
+
+i {
+  color: #696969;
+}
+
+.map{
+  position: absolute
+}
+
+.map_container{
+  max-width: 10px;
+}
+
+.map_image{
+  width: 330px; 
+  height: auto; 
+  display: flex;
+  justify-content: center;
+  margin-top: -27px;
+  margin-left: -10px;
+}
+    .answer{
+          font-size: 14px;
+          text-decoration: none;
+          color: black;
+          font-family: 'Galmuri14';
+          cursor: pointer; 
+          display: inline-block;
+          transition: transform 0.2s ease-in-out
+        }
+        .answer:hover{
+            transform: scale(1.1);
+        }
+        .answer:active{
+            transform: scale(1.1);
+        }
+   #ask{
+          font-family: 'Galmuri14';
+          font-size: 16px;
+          font-weight: bold;
+        } 
+  .item{
+    text-align: center;
+    font-weight: bold;
+  }
+  .point{
+    color: rgb(255, 4, 4);
+    text-decoration: none;
+    
+  }
