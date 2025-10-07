@@ -1,6 +1,11 @@
 @import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
 @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2');
-
+  body{
+            font-family: 'ChosunCentennial',sans-serif;
+            color: #1c1c1c;
+            padding: 1rem;
+            line-height: 1.5;
+            }
 .button{
   background-color: #9b9b9b; 
     color: white; 
@@ -31,7 +36,7 @@
 
 }
 .세모{
-  font-family: 'Galmuri14git commit -m "Fix: correct CSS file path for all pages"';
+  font-family: 'Galmuri14';
   text-decoration: none;
   font-size: 14px;
   color: #333333;
@@ -91,3 +96,98 @@ i {
     text-decoration: none;
     
   }
+  .sentence {
+            font-size: 1.0rem;
+            line-height: 2;
+            margin-bottom: 2rem;
+            font-family: 'Galmuri14';
+            text-align: center;
+        }
+        .blank {
+            display: inline-block;
+            width: 70px;
+            border-bottom: 2px solid #989898;
+            margin: 0 5px;
+        
+        }
+        .word-choices {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            border-top: 1px solid #ccc;
+            padding-top: 1.5rem;
+        }
+        .word-switch {
+            display: none;
+        }
+        .word-label {
+            padding: 5px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 1px solid black;
+            font-family: 'Galmuri14';
+            font-size: 13px;
+        }
+        .word-switch:checked + .word-label {
+            opacity: 0.5;
+            cursor: not-allowed;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+        }
+        .next-page-link {
+            display: none;
+            margin-top: 2rem;
+            text-align: center;
+        }
+        .next-page-link a {
+            font-size: 0.9rem;
+            color: #030303;
+            text-decoration: none;
+            font-family: 'Galmuri14';
+        }
+            #word-lock:checked ~ #word-conan:checked ~ #word-loud:checked ~ .next-page-link {
+            display: block;
+        }
+         .answer1{
+                text-decoration: none;
+                font-family: 'Galmuri14';
+                color: #1c1c1c;
+                border: 1px solid black;
+                padding: 4px 8px;
+                width: 75px;
+                text-align: center;
+            }
+            .button1{
+                   justify-content: center;
+                   display: flex;
+                   gap: 20px;
+                }
+                 .answer1{
+                text-decoration: none;
+                font-family: 'Galmuri14';
+                color: #1c1c1c;
+                border: 1px solid black;
+                padding: 4px 8px;
+                width: 75px;
+                text-align: center;
+            }
+            .button1{
+                   justify-content: center;
+                   display: flex;
+                   gap: 20px;
+                }
+                 .answer1{
+                text-decoration: none;
+                font-family: 'Galmuri14';
+                color: #1c1c1c;
+                border: 1px solid black;
+                padding: 4px 8px;
+                width: 75px;
+                text-align: center;
+            }
+            .button1{
+                   justify-content: center;
+                   display: flex;
+                   gap: 20px;
+                }
